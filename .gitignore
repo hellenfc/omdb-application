@@ -1,0 +1,3 @@
+/omdb-server/node_modules
+/omdb-server/ormconfig.json
+/omdb-client/node_modules

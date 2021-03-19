@@ -1,0 +1,28 @@
+
+
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "removeComments": true,
+    "sourceRoot": "./",
+    "target": "es6",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "lib": [
+      "es6"
+    ],
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "watch": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "./*.ts"
+, "ormconfig.js"  ]
+}

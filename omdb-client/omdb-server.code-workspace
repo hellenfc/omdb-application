@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../omdb-server"
+        },
+        {
+            "path": "../omdb-client"
+        }
+    ],
+    "settings": {}
+}
