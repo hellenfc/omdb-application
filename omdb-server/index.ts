@@ -22,7 +22,6 @@ createConnection().then(connection => {
 
     app.get('/sync', async (req, res) => {
         const result = await sync();
-        console.log('result', result.data)
         try {
             result.data.Search.forEach(element => {
                 const movie = new Movies();
@@ -52,12 +51,7 @@ createConnection().then(connection => {
     app.get('/movies', async (req, res) => {
         let savedMovies = await MovieRepository.find();
         res.send(savedMovies);
-        console.log("All movies from the db: ", savedMovies);
     })
 
     app.listen(port, () => console.log(`App listening in PORT ${port}`));
 })
-
-
-// TODO
-// - Manejar la paginacion

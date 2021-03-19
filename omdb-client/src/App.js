@@ -14,7 +14,6 @@ function App() {
 
     axios.get(targetUrl)
       .then((response) => {
-        console.log('Response', response)
         setLoading(false);
         setMovies(response.data);
       })
@@ -23,11 +22,6 @@ function App() {
         setError('Error al obtener listado. Intente nuevamente');
       });
   }, [])
-
-  const handleClick = () => {
-    console.log('Soy Click')
-  }
-
 
   if (loading) {
     return <div className="App-container">
@@ -41,7 +35,6 @@ function App() {
   }
 
   const renderTableElements = () => {
-    console.log('movies', movies)
     return movies.map((movie, i) => {
       return <tr key={movie.id}>
         <td>{movie.title}</td>
@@ -67,10 +60,6 @@ function App() {
           </tr>
           {renderTableElements()}
         </table>
-        <div>
-          <button id='left' className='button' onClick={() => handleClick()}>{'<'}</button>
-          <button id='right' className='button' onClick={() => handleClick()}>{'>'}</button>
-        </div>
       </div>
       </div>
   );
